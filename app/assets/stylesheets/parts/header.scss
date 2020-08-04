@@ -1,0 +1,9 @@
+header {
+  position: fixed;
+  height: 13vh;
+  background-color: red;
+}
+
+header.hide {
+  top: -13px;
+}
