@@ -1,9 +1,21 @@
 header {
   position: fixed;
+  top: 0;
+  transition: .5s;
   height: 13vh;
+  width: 100vw;
   background-color: red;
 }
+.header.hide {
+  top: -13vh;
+  display: none;
+}
 
-header.hide {
-  top: -13px;
+.g {
+  height: 50vh;
+  background-color: green;
+}
+.y {
+  height: 500vh;
+  background-color: yellow;
 }
