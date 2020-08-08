@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root to: "feelings#index"
-  resources :feelings, only: [:index, :new]
+  resources :feelings, only: [:index, :new, :show]
 end
