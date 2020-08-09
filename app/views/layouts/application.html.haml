@@ -8,6 +8,8 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
+    .dropLeft
+    .dropTop
     %header.header
       .headerLeft
         %i.fas.fa-bars
@@ -16,4 +18,5 @@
       .headerRight
         %h2 ようこそ〇〇様&emsp;|&emsp;
         %i.fas.fa-angle-double-down
+        .headerRightBox
     = yield
