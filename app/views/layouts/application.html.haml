@@ -9,6 +9,11 @@
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
     %header.header
+      .headerLeft
+        %i.fas.fa-bars
       .headerCenter
         %h1 myContents
+      .headerRight
+        %h2 ようこそ〇〇様&emsp;|&emsp;
+        %i.fas.fa-angle-double-down
     = yield

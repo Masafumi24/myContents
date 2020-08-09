@@ -1,3 +1,11 @@
+@mixin headerMenu($fontsize) {
+  text-align: center;
+  line-height: 13vh;
+  width: 30%;
+  height: 100%;
+  font-size: $fontsize;
+}
+
 .header {
   background-color: white;
   position: fixed;
@@ -6,13 +14,23 @@
   height: 13vh;
   width: 100vw;
   opacity: 0.5;
+  display: flex;
+  justify-content: space-between;
+  &Left {
+    @include headerMenu(2.9rem);
+  }
   &Center {
-    text-align: center;
-    line-height: 13vh;
-    width: 20%;
-    height: 50%;
-    margin: 0 auto;
-    font-size: 2.9rem;
+    @include headerMenu(2.9rem);
+  }
+  &Right {
+    @include headerMenu(1.6rem);
+    h2 {
+      display: inline;
+    }
+    .fa-angle-double-down {
+      display: inline;
+      line-height: 13vh;
+    }
   }
 }
 .header.hide {
