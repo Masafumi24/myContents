@@ -8,3 +8,14 @@ $(function () {
     })
   })
 });
+
+$(function () {
+  $('.headerRight .fa-angle-double-down').click(function(){
+    $('.drop').slideDown();
+    $('.dropTop').slideDown();
+    $('.dropTop .fa-times').click(function(){
+      $('.drop').slideUp();
+      $('.dropTop').slideUp();
+    })
+  })
+});
