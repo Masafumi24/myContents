@@ -8,8 +8,10 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-    .dropLeft
-    .dropTop
+    .drop
+      .dropLeft
+        %i.fas.fa-times
+      .dropTop
     %header.header
       .headerLeft
         %i.fas.fa-bars
