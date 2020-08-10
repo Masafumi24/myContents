@@ -5,14 +5,17 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 20vw;
+  height: $height;
+  width: $width;
   padding: 20px;
   background-color: rgb(59, 59, 59);
   .fa-times {
-    display: block;
-    text-align: right;
+    color: white;
+    // text-align: right;
     font-size: 2.9rem;
+  }
+  .fa-times:hover {
+    color: gray;
   }
 }
 
