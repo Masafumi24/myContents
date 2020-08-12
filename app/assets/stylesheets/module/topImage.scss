@@ -1,0 +1,6 @@
+@mixin topImage($image_height, $image_width, $image_url) {
+  height: $image_height;
+  width: $image_width;
+  background-image: url($image_url);
+  background-position: center;
+}

@@ -1,6 +1,8 @@
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 @import "module/reset";
+@import "module/topImage";
 @import "module/header";
 @import "module/dropmenu";
-@import "feelings";
+@import "feelings/index";
+@import "feelings/new";
