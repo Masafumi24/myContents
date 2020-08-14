@@ -1,8 +1,7 @@
 class FeelingsController < ApplicationController
   def index
-  end
-
-  def new
+    @feelings = Feeling.all
+    @feeling = Feeling.new
   end
 
   def show

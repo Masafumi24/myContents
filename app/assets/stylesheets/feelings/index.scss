@@ -1,3 +1,33 @@
-.feelingsIndexTop {
-  @include topImage(100vh, 100vw, "white-2523978_1920.jpg");
+.backImageFeelingsIndex {
+  @include topImage(100vh, 100vw, "lake-4639368_1920.jpg");
+  position: relative;
+  &Box {
+    box-sizing: border-box;
+    height: 50vh;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    &Left {
+      box-sizing: border-box;
+      color: white;
+      font-weight: bold;
+      width: 50%;
+      font-size: 4rem;
+      line-height: 7vh;
+      padding: 10% 0 0 10%;
+    }
+    &Right {
+      box-sizing: border-box;
+      color: white;
+      font-weight: bold;
+      width: 50%;
+      font-size: 1.8rem;
+      line-height: 7vh;
+      padding: 10% 0 0 5%;
+    }
+  }
+}
+.feeelingsIndexContent {
+  
 }

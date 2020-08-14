@@ -1,7 +1,7 @@
 @mixin dropMenu($height, $width) {
   box-sizing: border-box;
   display: none;
-  z-index: 3;
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -21,7 +21,7 @@
 .drop {
     box-sizing: border-box;
     display: none;
-    z-index: 2;
+    z-index: 100;
     position: fixed;
     top: 0;
     left: 0;

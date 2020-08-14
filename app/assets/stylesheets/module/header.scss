@@ -1,3 +1,15 @@
+@mixin header($top_position, $height, $space) {
+  background-color: rgba($color:white, $alpha: 0.5);
+  position: fixed;
+  top: $top_position;
+  transition: .5s;
+  height: $height;
+  width: 100vw;
+  display: flex;
+  justify-content: $space;
+  z-index: 99;
+}
+
 @mixin headerMenu($fontsize) {
   text-align: center;
   line-height: 13vh;
@@ -7,14 +19,7 @@
 }
 
 .header {
-  background-color: rgba($color:white, $alpha: 0.5);
-  position: fixed;
-  top: 0;
-  transition: .5s;
-  height: 13vh;
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
+  @include header(0, 13vh, space-between);
   &Left {
     @include headerMenu(2.9rem);
   }
@@ -33,5 +38,14 @@
   }
 }
 .header.hide {
-  top: -12vh;
+  top: -13vh;
+}
+.pankuzu {
+  @include header(13vh, 5vh, start);
+  line-height: 5vh;
+  font-size: 1.6rem;
+  padding-left: 5%;
+}
+.pankuzu.top{
+  top: 0;
 }
