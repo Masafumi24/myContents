@@ -12,12 +12,17 @@
   .feeelingsIndexFormTitle
     %h1 早速フォルダを作成しましょう！
   .feeelingsIndexFormBox
-    %h1 気負うことなく、思うがままにコンテンツの宝箱を作りましょう
-    %ul 例
-    %li 気合が入る
-    %li 新天地
-    %li 失恋
-    %li 悔しい
-    %li 優しくなりたい
-    
+    .feeelingsIndexFormBoxText
+      %h1 気負うことなく、思うがままにコンテンツの宝箱を作りましょう
+      %ul 例
+      %li 気合が入る
+      %li 新天地
+      %li 失恋
+      %li 悔しい
+      %li 優しくなりたい
+    = form_with model: @feeling, class: "feeelingsIndexFormBoxField" do |f|
+      .feeelingsIndexFormBoxFieldTitle
+        フォルダ作成
+      = f.text_field :feeling_name, class: "feeelingsIndexFormBoxFieldForm"
+      = f.submit
   
