@@ -7,6 +7,10 @@ class FeelingsController < ApplicationController
   def create
     @feeling = Feeling.new(feelings_params)
     @feeling.save
+    respond_to do |format|
+      format.json
+      format.html { redirect_to "/" }
+    end
   end
 
   def show

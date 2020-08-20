@@ -1,0 +1,1 @@
+json.feeling_name  @feeling.feeling_name

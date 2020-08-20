@@ -20,7 +20,7 @@
       %li 失恋
       %li 悔しい
       %li 優しくなりたい
-    = form_with model: @feeling, class: "feeelingsIndexFormBoxField", id: "new_feelings" do |f|
+    = form_with model: @feeling, local: true, class: "feeelingsIndexFormBoxField", id: "new_feelings" do |f|
       .feeelingsIndexFormBoxFieldTitle
         フォルダ作成
       = f.text_field :feeling_name, class: "feeelingsIndexFormBoxFieldForm"
