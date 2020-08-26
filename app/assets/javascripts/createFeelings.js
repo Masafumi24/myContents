@@ -10,6 +10,7 @@ $(function(){
       dataType: 'json',
       processData: false,
       contentType: false
+      
     })
   })
 })
