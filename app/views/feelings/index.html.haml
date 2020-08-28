@@ -24,7 +24,9 @@
       .feeelingsIndexFormBoxFieldTitle
         フォルダ作成
       = f.text_field :feeling_name, class: "feeelingsIndexFormBoxFieldForm"
-      = f.submit
+      = f.submit id: "newFeelingSubmit"
     .feeelingsIndexFormBoxList
       %h1 フォルダ一覧
-      
+      %ul.feeelingsIndexFormBoxListName
+        - @feelings.each do |f|
+          %li= f.feeling_name
