@@ -13,9 +13,6 @@ class FeelingsController < ApplicationController
     end
   end
 
-  def show
-  end
-
   private
 
   def feelings_params
