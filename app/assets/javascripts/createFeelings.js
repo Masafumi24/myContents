@@ -1,9 +1,7 @@
 $(function(){
   function buildHTML(feeling){
     var html =
-    `<ul class="feeelingsIndexFormBoxListName">
-      ${feeling.feeling_name}
-    </ul>`
+    `${feeling.feeling_name}`
     return html;
   }
 
@@ -22,7 +20,7 @@ $(function(){
     
     .done(function(data){
       var html = buildHTML(data);
-      $('.feeelingsIndexFormBoxListName').append(html);
+      $('.feelingsIndexFormBoxListName').append(html);
       $('form')[0].reset();
       $("#newFeelingSubmit").prop("disabled", false);
     })

@@ -8,11 +8,11 @@
       %h2 音楽、本、映画、ドラマ...
       %h2 それらを忘れず、感じた気持ちまたは状況とともに保存しましょう。
       %h2 同じ感情になった際に、また触れたいと思う日が来るかもしれません。
-.feeelingsIndexForm
-  .feeelingsIndexFormTitle
+.feelingsIndexForm
+  .feelingsIndexFormTitle
     %h1 早速フォルダを作成しましょう！
-  .feeelingsIndexFormBox
-    .feeelingsIndexFormBoxText
+  .feelingsIndexFormBox
+    .feelingsIndexFormBoxText
       %h1 気負うことなく、思うがままにコンテンツの宝箱を作りましょう
       %ul 例
       %li 気合が入る
@@ -20,13 +20,13 @@
       %li 失恋
       %li 悔しい
       %li 優しくなりたい
-    = form_with model: @feeling, local: true, class: "feeelingsIndexFormBoxField", id: "new_feelings" do |f|
-      .feeelingsIndexFormBoxFieldTitle
+    = form_with model: @feeling, local: true, class: "feelingsIndexFormBoxField", id: "new_feelings" do |f|
+      .feelingsIndexFormBoxFieldTitle
         フォルダ作成
-      = f.text_field :feeling_name, class: "feeelingsIndexFormBoxFieldForm"
+      = f.text_field :feeling_name, class: "feelingsIndexFormBoxFieldForm"
       = f.submit id: "newFeelingSubmit"
-    .feeelingsIndexFormBoxList
+    .feelingsIndexFormBoxList
       %h1 フォルダ一覧
-      %ul.feeelingsIndexFormBoxListName
+      %ul.feelingsIndexFormBoxListName
         - @feelings.each do |f|
           %li= f.feeling_name
